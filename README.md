@@ -23,6 +23,10 @@ shows again after rebooting :/
 1. `copy *.reg all.reg`
 2. double click `all.reg`.
 
+### Restore explorer's left
+
+Well, it will come back the next Windows Update (monthly).
+
 ## You may also like
 
 https://github.com/taroxd/Windows-Utils-Misc
