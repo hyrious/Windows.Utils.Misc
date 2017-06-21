@@ -11,6 +11,7 @@ Some simple utilities for my daily use.
     open_with_subl.reg      add context menu entry for Sublime Text 3 with icon
     apply_color.reg         apply accent color and inactive color
     *disable_homegroup.cmd  disable HomeGroup service
+    sleep_infty.exe         Sleep(​INFINITE​)
     *: need administrator privilege
 
 Note: Although `clear_EPP.reg` works immediately, the context menu entry of which
