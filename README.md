@@ -14,6 +14,7 @@ Some simple utilities for my daily use.
     reset_screenshot.reg    reset screenshot(Win + PrtScr)'s number to 0
     do_nothing.exe          main(){}
     sleep_infty.exe         Sleep(​INFINITE​)
+    remove_dir.cmd          https://stackoverflow.com/a/6208144
     
     *: need administrator privilege
 
