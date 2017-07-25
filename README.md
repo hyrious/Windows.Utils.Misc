@@ -12,8 +12,8 @@ Some simple utilities for my daily use.
     clear_WYDrive.reg       remove the explorer enrty of Tencent WeiYun
     open_with_subl.reg      add context menu entry for Sublime Text 3 with icon
     reset_screenshot.reg    reset screenshot(Win + PrtScr)'s number to 0
-    do_nothing.exe          main(){}
-    sleep_infty.exe         Sleep(​INFINITE​)
+    do_nothing.cs           main(){}
+    sleep_infty.cs          Sleep(​INFINITE​)
     remove_dir.cmd          https://stackoverflow.com/a/6208144
     
     *: need administrator privilege
@@ -22,6 +22,25 @@ Note: Although `clear_EPP.reg` works immediately, the context menu entry of whic
 shows again after rebooting :/
 
 ## Other things
+
+### How to use these .cs files
+
+You can use Visual Studio or simply csc.exe to compile them.
+
+If OS Windows 10, you can try the ruby code below:
+
+```ruby
+exit ARGV.each do |file|
+  CSC = `dir /s/b %windir%\\Microsoft.NET\\csc.exe`.strip.lines.last.freeze
+  exit 1 if CSC.nil?
+  puts "\e[1m\e[32mCompiling #{file}\e[0m"
+  if system "#{CSC} /nologo #{file}"
+    puts "\e[A\e[32mCompiling #{file} \e[0m[\e[1m\e[32m OK \e[0m]"
+  else
+    puts "\e[A\e[1mCompiling #{file} \e[0m[\e[1m\e[31m Failed \e[0m]"
+  end
+end.size
+```
 
 ### Import all `*.reg` files
 
