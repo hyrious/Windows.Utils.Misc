@@ -5,13 +5,14 @@ Some simple utilities for my daily use.
     *disable_homegroup.cmd  disable HomeGroup service
     *remove_nv_igfx.cmd     remove display drivers' context menu entries
     *WUClean.cmd            remove Windows Update Temp
+    clean_qq.reg            remove QQ laji (mostly cached images)
     apply_color.reg         apply accent color and inactive color
     clear_BaiduPan.reg      remove the context menu of BaiduPan
     clear_EPP.reg           remove the context menu of EPP (Windows Defender)
     clear_igfx.reg          remove the context menu of igfx (intel display driver)
     clear_nav.reg           remove useless entries at explorer's left
     clear_VS2017.reg        remove the context menu of VS 2017
-    clear_WYDrive.reg       remove the explorer enrty of Tencent WeiYun
+    clear_WYDrive.reg       remove the explorer entry of Tencent WeiYun
     open_with_subl.reg      add context menu entry for Sublime Text 3 with icon
     reset_screenshot.reg    reset screenshot(Win + PrtScr)'s number to 0
     do_nothing.cs           main(){}
