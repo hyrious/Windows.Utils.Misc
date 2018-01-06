@@ -5,7 +5,7 @@ Some simple utilities for my daily use.
     *disable_homegroup.cmd  disable HomeGroup service
     *remove_nv_igfx.cmd     remove display drivers' context menu entries
     *WUClean.cmd            remove Windows Update Temp
-    clean_qq.reg            remove QQ laji (mostly cached images)
+    clean_qq.cmd            remove QQ laji (mostly cached images)
     apply_color.reg         apply accent color and inactive color
     clear_BaiduPan.reg      remove the context menu of BaiduPan
     clear_EPP.reg           remove the context menu of EPP (Windows Defender)
