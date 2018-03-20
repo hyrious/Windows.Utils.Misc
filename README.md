@@ -18,6 +18,7 @@ Some simple utilities for my daily use.
     do_nothing.cs           main(){}
     sleep_infty.cs          Sleep(​INFINITE​)
     remove_dir.cmd          https://stackoverflow.com/a/6208144
+    no_sleep.c              please don't sleep
     
     *: need administrator privilege
 
