@@ -5,6 +5,7 @@ Some simple utilities for my daily use.
     *disable_homegroup.cmd  disable HomeGroup service
     *remove_nv_igfx.cmd     remove display drivers' context menu entries
     *WUClean.cmd            remove Windows Update Temp
+    *clear_EPP.cmd          remove the context menu of EPP (Windows Defender) totally
     clean_qq.cmd            remove QQ laji (mostly cached images)
     apply_color.reg         apply accent color and inactive color
     clear_BaiduPan.reg      remove the context menu of BaiduPan
@@ -22,8 +23,8 @@ Some simple utilities for my daily use.
     
     *: need administrator privilege
 
-Note: Although `clear_EPP.reg` works immediately, the context menu entry of which
-shows again after rebooting :/
+Note: ~~Although `clear_EPP.reg` works immediately, the context menu entry of which
+shows again after rebooting :/~~ should use clear_EPP.cmd instead of clear_EPP.reg.
 
 ## Other things
 
