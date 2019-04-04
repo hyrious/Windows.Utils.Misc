@@ -1,0 +1,1 @@
+regsvr32 /u /s "%APPDATA%\baidu\BaiduNetdisk\YunShellExt64.dll"

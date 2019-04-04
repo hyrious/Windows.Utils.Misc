@@ -2,59 +2,43 @@
 
 Some simple utilities for my daily use.
 
-    *disable_homegroup.cmd  disable HomeGroup service
-    *remove_nv_igfx.cmd     remove display drivers' context menu entries
-    *WUClean.cmd            remove Windows Update Temp
-    *clear_EPP.cmd          remove the context menu of EPP (Windows Defender) totally
-    clean_qq.cmd            remove QQ laji (mostly cached images)
-    apply_color.reg         apply accent color and inactive color
-    clear_BaiduPan.reg      remove the context menu of BaiduPan
-    clear_EPP.reg           remove the context menu of EPP (Windows Defender)
-    clear_igfx.reg          remove the context menu of igfx (intel display driver)
-    clear_nav.reg           remove useless entries at explorer's left
-    clear_VS2017.reg        remove the context menu of VS 2017
-    clear_WYDrive.reg       remove the explorer entry of Tencent WeiYun
-    open_with_subl.reg      add context menu entry for Sublime Text 3 with icon
-    reset_screenshot.reg    reset screenshot(Win + PrtScr)'s number to 0
-    do_nothing.cs           main(){}
-    sleep_infty.cs          Sleep(​INFINITE​)
-    remove_dir.cmd          https://stackoverflow.com/a/6208144
-    no_sleep.c              please don't sleep
-    
-    *: need administrator privilege
+## Details
 
-Note: ~~Although `clear_EPP.reg` works immediately, the context menu entry of which
-shows again after rebooting :/~~ should use clear_EPP.cmd instead of clear_EPP.reg.
-
-## Other things
-
-### How to use these .cs files
-
-You can use Visual Studio or simply csc.exe to compile them.
-
-If OS Windows 10, you can try the ruby code below:
-
-```ruby
-exit ARGV.each do |file|
-  CSC = `dir /s/b %windir%\\Microsoft.NET\\csc.exe`.strip.lines.last.freeze
-  exit 1 if CSC.nil?
-  puts "\e[1m\e[32mCompiling #{file}\e[0m"
-  if system "#{CSC} /nologo #{file}"
-    puts "\e[A\e[32mCompiling #{file} \e[0m[\e[1m\e[32m OK \e[0m]"
-  else
-    puts "\e[A\e[1mCompiling #{file} \e[0m[\e[1m\e[31m Failed \e[0m]"
-  end
-end.size
 ```
-
-### Import all `*.reg` files
-
-1. `copy *.reg all.reg`
-2. double click `all.reg`.
-
-### Restore explorer's left
-
-Well, it will come back the next Windows Update (monthly).
+.
+│
+├─admin
+│      clear_EPP.cmd            remove Windows Defender's context menu
+│      remove_nv_igfx.cmd       remove Display Drivers' context menu
+│      WUClean.cmd              free the space of disk C:
+│      clear_BaiduPan.cmd       remove baidupan's context menu
+│      clear_Thunder.cmd        remove xunlei laji
+│
+├─noadmin
+│      apply_color.reg          set DWM title bar color
+│      clean_qq.cmd             clean qq laji (mostly images)
+│      clear_BaiduPan.reg       remove baidupan's context menu
+│      clear_nav.reg            remove special folders in explorer
+│      clear_VIM.reg            remove gVIM's context menu
+│      clear_VS2017_2019.reg    remove VS2017/2019's context menu
+│      clear_WYDrive.reg        remove tencent weiyun's context menu
+│      open_with_subl.reg       add "Open with Sublime Text" context menu
+│      reset_screenshot.reg     reset screenshot count number to 0
+│
+├─misc
+│      remove_dir.cmd           del /s/f/q && rd /s/q
+│
+├─src
+│      do_nothing.cs            main(){}
+│      sleep_infty.cs           Sleep(-1)
+│      loop.cs                  loop { touch "loop.txt" } // to wake my hdd
+│
+└─deprecated
+       no_sleep.c               prevent os sleep, not working now
+       clear_EPP.reg            use admin/clear_EPP.cmd instead
+       clear_igfx.reg           use admin/remove_nv_igfx.cmd instead
+       disable_homegroup.cmd    newer win10 doesn't need it
+```
 
 ## You may also like
 
