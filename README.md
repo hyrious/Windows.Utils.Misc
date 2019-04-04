@@ -24,6 +24,7 @@ Some simple utilities for my daily use.
 │      clear_WYDrive.reg        remove tencent weiyun's context menu
 │      open_with_subl.reg       add "Open with Sublime Text" context menu
 │      reset_screenshot.reg     reset screenshot count number to 0
+│      dont_install_ads.reg     run it just after a clean install
 │
 ├─misc
 │      remove_dir.cmd           del /s/f/q && rd /s/q
