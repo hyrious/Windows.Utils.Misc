@@ -1,2 +1,4 @@
 Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\*\shell\UploadToThunderPan]
+[-HKEY_CLASSES_ROOT\Directory\shell\XMPFolder1Play]
+[-HKEY_CLASSES_ROOT\Directory\shell\XMPFolder2Add]
