@@ -19,6 +19,7 @@ Some simple utilities for my daily use.
 │      clean_qq.cmd             clean qq laji (mostly images)
 │      clear_BaiduPan.reg       remove baidupan's context menu
 │      clear_Thunder.reg        remove thunder pan's context menu
+|      clear_Win...Terminal.reg remove Windows Terminal's context menu
 │      clear_nav.reg            remove special folders in explorer
 │      clear_VIM.reg            remove gVIM's context menu
 │      clear_VS2017_2019.reg    remove VS2017/2019's context menu
