@@ -45,7 +45,7 @@ Some simple utilities for my daily use.
 
 ## You may also like
 
-https://github.com/taroxd/Windows-Utils-Misc
+https://github.com/taroxd/Windows-Utils
 
 ## License
 
